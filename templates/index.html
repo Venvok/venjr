@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/index.css">
+    <title>LOGIN PAGE</title>
+</head>
+<body>
+    <div class="cont1">
+        <form action="/login" method="post">
+            <h2>LOGIN </h2>
+            <div class="subcont1" >
+                <label style="font-size: 20px;font-family: 'Lucida Sans';" for="username">Username:</label><br>
+                <input id="username" type="text" placeholder="Enter Your Username" name="username" required><br>
+                <label style="font-size: 20px;font-family: 'Lucida Sans';" for="password">Password:</label><br>
+                <input id="password" type="password" placeholder="Enter Your Password" name="password" minlength="6" required><br>
+
+                <div style="margin-top: 5px;"><label for=""><a href="forgot_password" style="color: rgb(39, 237, 32);" method="get">Forgot Password?</a></label></div><br>
+
+                <button type="submit">LOGIN</button><br>
+                <div style="color: red; font-size: 20px;margin-top: 10px;"> {{message}} </div>
+                
+                <div  style="margin-top: 15px;">
+                    <label style="color: azure;">Don't have an Account?</label><br>
+                    <label style="margin-top: 2vh;"><a style="color:rgb(233, 177, 11); font-size: 23px;" href="create_account">Click here to Create an Account</a></label><br>
+                </div>    
+        </form>    
+            </div>
+    </div>
+</body>
+</html>

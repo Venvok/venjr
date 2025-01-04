@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/index.css">
+    <title>CREATE ACCOUNT</title>
+</head>
+<body>
+    <div class="cont1" style="height: 95vh;">
+        <form action="/create" method="post">
+            <h2 style="font-size: 25px; padding-left: 8vw;">CREATE ACCOUNT </h2>
+            <div class="subcont1" >
+                <label style="font-size: 20px;font-family: 'Lucida Sans';" for="username">Username:</label><br>
+                <input id="username" type="text" placeholder="Enter Your Username" name="username" required><br>
+                <label style="font-size: 20px;font-family: 'Lucida Sans';" for="password">Password:</label><br>
+                <input id="password" type="password" placeholder="Enter Your Password" name="password" minlength="6" required><br>
+                <label style="font-size: 20px;font-family: 'Lucida Sans';" for="email">Email:</label><br>
+                <input id="email" type="email" placeholder="Enter Your Email here eg venvok@fake.com" name="email" required><br><br>
+                <button type="submit">REGISTER</button><br>
+                <div style="color: red; font-size: 20px;margin-top: 10px;"> {{message}} </div>
+                <div  style="margin-top: 15px;">
+                    <label style="color: azure;">Already have an Account?</label><br>
+                    <label style="margin-top: 2vh;"><a style="color:rgb(233, 177, 11); font-size: 23px;" href="/" method="GET">Click here to Login</a></label><br>
+                </div>    
+        </form>    
+            </div>
+    </div>
+</body>
+</html>
